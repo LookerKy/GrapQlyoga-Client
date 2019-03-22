@@ -1,22 +1,18 @@
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
-
-const globalStyles = createGlobalStyle`
-    ${reset};
-    a{
-        text-decoration:none;
-        color:inherit;
-    }
-    *{
-        box-sizing:border-box;
-    }
-    body{
-        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size:12px;
-        background-color:rgba(20, 20, 20, 1);
-        color:white;
-        padding-top:50px;
-    }
+createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500');
+  ${reset};
+  body{
+    font-family: 'Maven Pro', sans-serif;
+    background-color: #ecf0f1;
+  }
+  a{
+      color:inherit;
+  }
+  main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
 `;
-
-export default globalStyles;
